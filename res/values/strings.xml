@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TaskTXT_01</string>
+    <string name="hello">TaskTXT_01!!!</string>
+   
+    <string name="buttontext">开始解析TXT</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">设置</string>
+    <string name="action_settings2">Settings2</string>
+    <string name="action_update">更新</string>
+    <string name="add">+</string>
+    <string name="title_activity_edit">EditActivity</string>
+    <string name="edit">edit</string>
+    <string name="dele">dele</string>
+    <string name="user">user</string>
+    <string name="sms">sms</string>
+    <string name="call">call</string>
+    <string name="phone">phone:  </string>
+    <string name="phonenum">12345678978</string>
+    <string name="job">jobnum:  </string>
+    <string name="jobnum">12345678</string>
+    <string name="sex">sex:  </string>
+    <string name="sextext">男 </string>
+    <string name="terr">territoriality:</string>
+    <string name="terrtext">南京</string>
+    <string name="title_activity_edit_text">EditTextActivity</string>
+    <string name="save">save</string>
+    <!-- 抽屉设置界面 -->
+    <string name="title_section1">Update</string>
+    <string name="title_section2">Null…</string>
+    <string name="title_section3">Null…</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Setting</string>
+    
+    <!-- 统设置界面需要要到的字符串 -->  
+    <string name="system_settings">系统设置</string>  
+    <string name="auto_update_setting">自动更新设置</string>  
+    <string name="auto_update_switch_title">自动更新</string>  
+    <string name="auto_update_switch_key">auto_update_switch</string>  
+    <string name="auto_update_switch_summary_on">开启自动更新</string>  
+    <string name="auto_update_switch_summary_off">关闭自动更新</string>  
+    <string name="auto_update_frequency_title">更新频率</string>  
+    <string name="auto_update_frequency_key">auto_update_frequency</string>  
+    <string name="auto_update_frequency_default_value">10</string>  
+    <string name="auto_update_frequency_summary">设置自动更新的时间周期</string>  
+    <string name="cancel">取消</string>  
+</resources>

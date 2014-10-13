@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:title="@string/system_settings"
+    android:id="@+id/settingpre">
+    <!--  
+    <LinearLayout 
+        android:id="@+id/setlinear"
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent">
+    	-->
+    <CheckBoxPreference 
+        android:summaryOn="@string/auto_update_switch_summary_on" 
+        android:defaultValue="true" 
+        android:key="@string/auto_update_switch_key" 
+        android:title="@string/auto_update_switch_title" 
+        android:summaryOff="@string/auto_update_switch_summary_off"/>
+    <ListPreference 
+        android:entryValues="@array/auto_update_frequency_value" 
+        android:entries="@array/auto_update_frequency_entry" 
+        android:dialogTitle="@string/auto_update_frequency_title" 
+        android:negativeButtonText="@string/cancel" 
+        android:defaultValue="@string/auto_update_frequency_default_value" 
+        android:title="@string/auto_update_frequency_title" 
+        android:summary="@string/auto_update_frequency_summary" 
+        android:dependency="@string/auto_update_switch_key" 
+        android:key="@string/auto_update_frequency_key"/>
+    
+
+</PreferenceScreen>

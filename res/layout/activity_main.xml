@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sumlayout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.tasktxt_01.MainActivity"
+    tools:ignore="MergeRootFrame">
+     
+	<android.support.v4.widget.DrawerLayout 
+    	android:id="@+id/drawer_layout"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent">
+    	
+	     <FrameLayout 
+    		android:id="@+id/container"
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:orientation="vertical">
+    		
+    		
+					<RelativeLayout
+					    android:id="@+id/searchrelativelayout"
+                		android:layout_width="match_parent"
+                		android:layout_height="wrap_content"
+                		android:padding="5dp" >
+
+        				 <Button 
+            				android:id="@+id/add" 
+            				android:layout_width="wrap_content" 
+            				android:layout_height="wrap_content" 
+            				android:layout_alignParentRight="true"
+            				android:textSize="30pt"
+            				android:text="@string/add" />
+         
+         				<EditText 
+             				android:id="@+id/entry" 
+             				android:layout_width="wrap_content" 
+             				android:layout_height="wrap_content"
+             				android:layout_toLeftOf="@id/add"
+             				android:layout_alignParentLeft = "true"
+             				android:layout_alignBottom = "@id/add"/>
+ 					</RelativeLayout>
+     				<RelativeLayout 
+         				android:id="@+id/listrelativeLayout"
+         				android:orientation="vertical"
+   		 				android:layout_width="match_parent"
+    	 				android:layout_height="fill_parent"
+    	 				android:layout_marginTop="55dp">
+         
+         					<ListView 
+         		    			
+         		    			android:id="@id/android:list"
+         		   				android:layout_width="fill_parent"
+								android:layout_height="fill_parent" 
+								android:drawSelectorOnTop="false"
+								android:scrollbars="vertical" />
+        <!--  android:id="@+id/mlistview" --> 
+     				</RelativeLayout>
+     
+     
+			
+			</FrameLayout> 
+	   <fragment
+	  
+        android:id="@+id/navigation_drawer"
+        android:name="com.example.tasktxt_01.NavigationDrawerFragment"
+        android:layout_width="@dimen/navigation_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        tools:layout="@layout/fragment_navigation_drawer" />
+		
+	</android.support.v4.widget.DrawerLayout>
+	
+</LinearLayout>
+

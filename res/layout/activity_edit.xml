@@ -1,0 +1,172 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tasktxt_01.EditActivity"
+    tools:ignore="MergeRootFrame" >
+    
+    <LinearLayout 
+   		android:id="@+id/editlinerlayout"
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent">
+    	<!-- 第一层 -->
+ 		<RelativeLayout
+        	android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+            
+ 		<Button 
+            android:id="@+id/edit" 
+            android:layout_width="100pt" 
+            android:layout_height="65pt" 
+            android:layout_alignParentRight="true"
+            android:textSize="25pt"
+            android:text="@string/edit" />
+ 		 <Button 
+            android:id="@+id/dele" 
+            android:layout_width="100pt" 
+            android:layout_height="65pt" 
+            android:layout_toLeftOf="@id/edit"
+            android:textSize="25pt"
+            android:text="@string/dele" />
+ 		 
+ 		 <TextView 
+ 		    android:id="@+id/user" 
+ 		    android:layout_width="wrap_content" 
+            android:layout_height="65pt" 
+            android:layout_alignParentLeft = "true"
+            android:layout_alignBottom = "@id/edit"
+            android:textSize="40pt"
+ 		     />
+        </RelativeLayout>
+        <!-- 第二层 -->
+         <RelativeLayout
+        	android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+            
+ 		  <TextView 
+ 		    android:id="@+id/sex" 
+ 		    android:layout_width="130pt" 
+            android:layout_height="65pt" 
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft = "true"
+            android:textSize="25pt"
+            android:text="@string/sex"
+ 		  />
+ 		 
+ 		 <TextView 
+ 		    android:id="@+id/sextext" 
+ 		    android:layout_width="wrap_content" 
+            android:layout_height="65pt" 
+            android:gravity="center"
+            android:layout_toRightOf="@id/sex"
+            android:textSize="25pt"
+      
+ 		  />
+        </RelativeLayout>
+ 		<!-- 第三层 -->
+         <RelativeLayout
+        	android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+            
+ 		  <TextView 
+ 		    android:id="@+id/job" 
+ 		    android:layout_width="120pt" 
+            android:layout_height="65pt" 
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft = "true"
+            android:textSize="25pt"
+            android:text="@string/job"
+ 		  />
+ 		 
+ 		 <TextView 
+ 		    android:id="@+id/jobnum" 
+ 		    android:layout_width="wrap_content" 
+            android:layout_height="65pt" 
+            android:gravity="center"
+            android:layout_toRightOf="@id/job"
+            android:textSize="25pt"
+       
+ 		  />
+        </RelativeLayout>
+        <!-- 第四层 -->
+ 		 <RelativeLayout
+        	android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+            
+ 		<Button 
+            android:id="@+id/sms" 
+            android:layout_width="wrap_content" 
+            android:layout_height="65pt" 
+            android:layout_alignParentRight="true"
+            android:textSize="25pt"
+            android:text="@string/sms" />
+ 		 <Button 
+            android:id="@+id/call" 
+            android:layout_width="wrap_content" 
+            android:layout_height="65pt" 
+            android:layout_toLeftOf="@id/sms"
+            android:textSize="25pt"
+            android:text="@string/call" />
+ 		 
+ 		  <TextView 
+ 		    android:id="@+id/phone" 
+ 		    android:layout_width="120pt" 
+            android:layout_height="65pt" 
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft = "true"
+            android:layout_alignBottom = "@id/sms"
+            android:textSize="25pt"
+            android:text="@string/phone"
+ 		  />
+ 		 
+ 		 <TextView 
+ 		    android:id="@+id/phonenum" 
+ 		    android:layout_width="wrap_content" 
+            android:layout_height="65pt" 
+            android:gravity="center"
+            android:layout_toRightOf="@id/phone"
+            android:layout_alignBottom = "@id/sms"
+            android:textSize="25pt"
+           
+ 		  />
+        </RelativeLayout>
+         <!-- 第五层 -->
+         <RelativeLayout
+        	android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+            
+ 		  <TextView 
+ 		    android:id="@+id/terr" 
+ 		    android:layout_width="140pt" 
+            android:layout_height="65pt" 
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft = "true"
+            android:textSize="25pt"
+            android:text="@string/terr"
+ 		  />
+ 		 
+ 		 <TextView 
+ 		    android:id="@+id/terrtext" 
+ 		    android:layout_width="wrap_content" 
+            android:layout_height="65pt" 
+            android:gravity="center"
+            android:layout_toRightOf="@id/terr"
+            android:textSize="25pt"
+            
+ 		  />
+        </RelativeLayout>
+
+        
+        
+    </LinearLayout>
+    
+    
+</FrameLayout>
+
